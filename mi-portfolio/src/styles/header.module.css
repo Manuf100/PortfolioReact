@@ -1,0 +1,115 @@
+:root {
+    --social-bg-color: #8a8a8a;
+    --social-bg-color-hover: #d8d8d865;
+    --gradient-left: #00094d;
+    --gradient-right: #011082;
+    --header-hover: #ffb163;
+    --header-text: rgba(232, 232, 232, 0.85);
+    --font-family: 'Source Sans Pro', sans-serif;
+    --main-bg: #31373c;
+    --p-about: #c8c6c6ea;
+    --skills: #252525;
+}
+
+@keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(.75, 1.25, 1);
+    }
+
+    40% {
+        transform: scale3d(1.25, .75, 1);
+    }
+
+    50% {
+        transform: scale3d(.85, 1.15, 1);
+    }
+
+    65% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    75% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-48px);
+    }
+}
+
+@keyframes scaleLine {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+
+header {
+    animation: slide-right 0.8s ease-in both;
+}
+
+.myGradient {
+    background: linear-gradient(to right, var(--gradient-left), var(--gradient-right));
+}
+
+.brandImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    margin-right: 5px;
+}
+
+.brandName {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--header-text);
+}
+
+.navLink {
+    font-size: 20px !important;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    color: var(--header-text);
+}
+
+.navLink:hover {
+    color: var(--header-hover) !important;
+    animation: jello-vertical 0.9s linear both;
+}
