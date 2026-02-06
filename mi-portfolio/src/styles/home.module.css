@@ -1,0 +1,109 @@
+:root {
+    --social-bg-color: #8a8a8a;
+    --social-bg-color-hover: #d8d8d865;
+    --gradient-left: #00094d;
+    --gradient-right: #011082;
+    --header-hover: #ffb163;
+    --header-text: rgba(232, 232, 232, 0.85);
+    --font-family: 'Source Sans Pro', sans-serif;
+    --main-bg: #31373c;
+    --p-about: #c8c6c6ea;
+    --skills: #252525;
+}
+
+/*animaciones*/
+@keyframes scaleLine {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+
+#mainSection {
+    position: relative;
+    height: 100vh;
+    min-height: 80rem;
+    max-height: 120rem;
+    background-color: var(--main-bg);
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90rem;
+    width: 90%;
+}
+
+h1 {
+    font-size: 54px !important;
+    position: relative;
+    font-weight: bold !important;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1rem);
+    height: 5px;
+    width: 35%;
+    background: var(--gradient-left);
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    border-radius: 5px;
+    animation: scaleLine 1s ease-out forwards;
+}
+
+.brandImgHome {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgb(7, 6, 6);
+}
+
+.pText {
+    font-size: 18px;
+}
+
+.text {
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.textDesc {
+    margin: 3rem auto 0 auto;
+    max-width: 80rem;
+}
+
+.btnMain {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.btn {
+    background-color: #17a2b8 !important;
+    color: white !important;
+    font-size: 2rem;
+    padding: 1.7rem 6rem;
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #138496 !important;
+}
+
+@media (max-width: 800px) {
+    .pText {
+        font-size: 14px;
+        text-align: center;
+    }
+}
