@@ -1,0 +1,236 @@
+:root {
+    --social-bg-color: #8a8a8a;
+    --social-bg-color-hover: #d8d8d865;
+    --gradient-left: #00094d;
+    --gradient-right: #011082;
+    --header-hover: #ffb163;
+    --header-text: rgba(232, 232, 232, 0.85);
+    --font-family: 'Source Sans Pro', sans-serif;
+    --main-bg: #31373c;
+    --p-about: #c8c6c6ea;
+    --skills: #252525;
+}
+
+/*animaciones*/
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(.75, 1.25, 1);
+    }
+
+    40% {
+        transform: scale3d(1.25, .75, 1);
+    }
+
+    50% {
+        transform: scale3d(.85, 1.15, 1);
+    }
+
+    65% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    75% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-48px);
+    }
+}
+
+@keyframes scaleLine {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+
+
+
+/*project*/
+.card {
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    max-width: 400px;
+    /* No pasa de 400px */
+    margin: auto;
+    /* Centrada horizontalmente si está en columna */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.625), 0 6px 20px 0 rgba(0, 0, 0, 0.387);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 72, 255, 0.625), 0 6px 20px 0 rgba(0, 72, 255, 0.625);
+}
+
+.imgProject {
+    width: 100%;
+    /* Que ocupe todo el ancho de la card */
+    height: 300px !important;
+    /* Alto fijo */
+    object-fit: contain;
+    /* Recorta la imagen si es necesario */
+    background-color: #f8f9fa5b;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.ProjectDiv {
+    text-align: center;
+}
+
+.iconoP {
+    font-size: 32px;
+    color: #0b0b22;
+    /* oscuro */
+    padding-right: 15px;
+}
+
+.iconoP:hover {
+    transform: scale(1.1);
+    color: #333;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.textCard {
+    font-size: 12px;
+}
+
+.paddingCard {
+    padding-top: 10px;
+}
+
+.text {
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.slideRight {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all 0.5s ease-out;
+}
+
+/* Clase que se activa al hacer scroll */
+.slideRight.active {
+    animation: slide-right 1.5s ease-out forwards;
+}
+
+#projects {
+    padding: 12rem 0 12rem 0;
+    background-color: var(--main-bg);
+    /*scroll-margin-top: 100px; para hacer click en nav ajustá según el alto de tu navbar */
+}
+
+.mySizeAbout {
+    max-width: 130rem;
+    width: 90%;
+}
+
+.h2About {
+    margin-bottom: 9rem;
+    font-size: 40px;
+    position: relative;
+    font-weight: bold;
+}
+
+.h2About::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 10%;
+    background: var(--gradient-left);
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    border-radius: 5px;
+}
+
+.h2About.active::after {
+    animation: scaleLine 1s ease-out forwards;
+}
+
+.pText {
+    font-size: 18px;
+}
+
+.aboutContent {
+    margin-top: 45px;
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(255, 255, 255, 0.05);
+    /* Layer de referencia / Backdrop */
+    padding: 1rem;
+    border-radius: 50px;
+    width: fit-content;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.filterBtn {
+    background: transparent;
+    border: 1px solid var(--header-hover);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.filterBtn:hover {
+    background: rgba(255, 177, 99, 0.1);
+    transform: translateY(-2px);
+}
+
+.filterBtnActive {
+    background: var(--header-hover);
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 177, 99, 0.4);
+}
