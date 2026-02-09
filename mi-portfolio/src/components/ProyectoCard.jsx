@@ -9,7 +9,7 @@ function ProyectoCard({ proyecto }) {
     return (
         <div className='col-md-4 d-flex align-items-strectch mb-4'>
             <Card className={`${styles.card} h-100 d-flex flex-column ${styles.paddingCard}`}>
-                <Carousel interval={null} className={`${styles.carouselContainer}`}>
+                <Carousel interval={null} className={`${styles.carouselContainer}`} data-bs-theme="dark">
                     {proyecto.imagenes.map((img, index) => (
                         <Carousel.Item key={index}>
                             <img
@@ -20,11 +20,10 @@ function ProyectoCard({ proyecto }) {
                     ))}
                 </Carousel>
                 <Card.Body className='d-flex flex-column'>
-                    <h4 className='fw-bold'>{proyecto.titulo}</h4>
+                    <h2 className='fw-bold'>{proyecto.titulo}</h2>
                     <p className={`${styles.textCard} mb-4`}>{proyecto.descripcion}</p>
-                    <p className={`${styles.textCard} mb-4`}><strong>FECHA: </strong>{proyecto.fechaInicio} - {proyecto.fechaFin}</p>
                     <p className={`${styles.textCard} mb-4`}><strong>TECNOLOGIAS: </strong>{proyecto.tecnologias.join(', ')}</p>
-                    <Link to={`/proyectos/${proyecto.id}-${proyecto.titulo.toLowerCase().replace(/\s+/g, '-')}`} className='btn btn-small btn-outline-info'>Ver Proyecto</Link>
+                    <Link to={`/proyectos/${proyecto.id}-${proyecto.titulo.toLowerCase().replace(/\s+/g, '-')}`} className={styles.cardBtn}>Ver Proyecto</Link>
                 </Card.Body>
             </Card>
         </div>

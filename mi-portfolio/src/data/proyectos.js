@@ -7,7 +7,7 @@ export const proyectos=[
         fechaFin:"En producción",
         tecnologias:["Flutter", "Dart", "Firebase", "Supabase", "JSON"],
         descripcion:"App para gestionar canciones y acordes, con buscador avanzado.",
-        detalleLargo:"Descripción mas larga..... \n segundo parrafo",
+        detalleLargo:"Esta aplicación contiene un cancionero con acordes para guitarra, junto con diversas herramientas utilizadas en el Movimiento de Schoenstatt. Está diseñada para facilitar el acceso a cantos y oraciones en encuentros, misas y momentos de oración.\nFunciones principales:\n🎸 Cancionero con acordes: Letras y acordes de canciones.\n📞 Teléfono del Padre: Acceso al Teléfono del Padre Kentenich.\n📖 Evangelio del día\n📅 Acción del día: Acciones diarias para acercarnos a Dios, fortalecer la fe y ayudar a los demas\n🙏 Oraciones: Incluye la Oración de Confianza, la Oración de Consagración, Oración al Espíritu Santo, Oración de la mañana y los Misterios del Rosario.\n📝 Capitalario: Registro de aportes al Capital de Gracias.\n🔎 Búsqueda rápida: Encuentra canciones y contenido fácilmente.\n📖 Interfaz sencilla: Diseño intuitivo para un acceso rápido a todas las funciones",
         imagenes:[
             "logo_final.png",
             "cancionero01.jpg",
@@ -17,9 +17,8 @@ export const proyectos=[
             "cancionero05.jpg",
             "cancionero06.jpg"
         ],
-        github:"a.com",
-        web:"b.com",
-        playStore:"c.com"
+        web:"https://cancionero-schoenstatt.web.app/",
+        playStore:"https://play.google.com/store/apps/details?id=com.MANUF.JMSALTA"
     },
     {
         id:2,
