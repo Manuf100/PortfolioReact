@@ -1,7 +1,7 @@
 import miFoto from '../assets/img/miFoto.jpg';
 import styles from '../styles/header.module.css';
 import { Link } from 'react-router-dom';
-import {Nav, Navbar, Container, NavLink} from 'react-bootstrap';
+import { Nav, Navbar, Container, NavLink } from 'react-bootstrap';
 
 function HeaderComp() {
     return (
@@ -17,6 +17,7 @@ function HeaderComp() {
                         <Nav>
                             <NavLink as={Link} to="/" className={styles.navLink}>Inicio</NavLink>
                             <NavLink as={Link} to="/proyectos" className={styles.navLink}>Proyectos</NavLink>
+                            <NavLink as={Link} to="/contacto" className={styles.navLink}>Contacto</NavLink>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
