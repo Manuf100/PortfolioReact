@@ -6,6 +6,7 @@ function SobreMi() {
     const nac = 2004;
     const edad = new Date().getFullYear() - nac;
 
+
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -35,16 +36,19 @@ function SobreMi() {
                         <h3 className={`${styles.text} text-white ${styles.h3About} font-weight-bold`}>¿Quien soy?</h3>
                         <div>
                             <p className={`${styles.text} ${styles.p14}`}>
-                                Tengo {edad} años. Nací en la provincia de Salta, Argentina, y actualmente estudio Ingeniería Informática en la Universidad Católica de Salta. Me gusta aprender constantemente y encontrar nuevas formas de aplicar lo que estudio.
+                                Tengo {edad} años. Soy estudiante de Ingeniería Informática en la Universidad Católica de Salta. Me apasiona la tecnología y busco constantemente nuevas formas de aplicar mis conocimientos en soluciones reales.
                             </p>
                             <p className={`${styles.text} ${styles.p14}`}>
-                                Disfruto trabajar en proyectos pequeños que me permitan practicar y mejorar mis conocimientos. Aunque actualmente estoy más enfocado en el desarrollo front-end, también tengo nociones de back-end. Mi mayor motivación es ver cómo una idea toma forma y se convierte en algo funcional y útil.
+                                Mi enfoque principal es el desarrollo Front-End, donde disfruto creando interfaces intuitivas. Paralelamente, estoy expandiendo mis habilidades hacia el Back-End con Node.js, con el objetivo de tener una visión integral del desarrollo web.
                             </p>
                             <p className={`${styles.text} ${styles.p14}`}>
-                                Soy una persona tranquila, perseverante y detallista. Me gusta aprender de los errores, trabajar con objetivos claros y mantener siempre una actitud positiva. Disfruto ayudar a los demás, compartir lo que sé y aportar con lo que puedo en cada proyecto o equipo del que formo parte.
+                                Me defino como una persona perseverante y detallista. Valoro el aprendizaje continuo y el trabajo en equipo, siempre buscando aportar valor y crecer junto a mis compañeros.
                             </p>
                             <p className={`${styles.text} ${styles.p14}`}>
-                                Actualmente estoy aprendiendo lo básico de Flutter y Dart, con el objetivo de adquirir conocimientos en desarrollo móvil y poder crear aplicaciones simples por mi cuenta.
+                                Más allá del código, disfruto de la naturaleza y las caminatas al aire libre. Participo activamente en el movimiento de Schoenstatt, realizando misiones y actividades solidarias, lo que refuerza mi vocación de servicio y mi compromiso con ayudar a los demás.
+                            </p>
+                            <p className={`${styles.text} ${styles.p14} font-italic`}>
+                                Siempre estoy buscando nuevos desafíos y oportunidades para seguir aprendiendo.
                             </p>
                         </div>
                     </div>
