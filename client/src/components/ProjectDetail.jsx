@@ -129,7 +129,8 @@ function ProjectDetail() {
                                 <div className="d-flex flex-wrap gap-3 mt-2">
                                     {proyecto.github && (
                                         <a href={proyecto.github} target="_blank" rel="noopener noreferrer" className={styles.linkBtn}>
-                                            <i className="fa-brands fa-github fa-lg"></i> GitHub
+                                            <i className="fa-brands fa-github fa-lg"></i> GitHub -
+                                            (Fragmentos de codigos)
                                         </a>
                                     )}
                                     {proyecto.web && (
