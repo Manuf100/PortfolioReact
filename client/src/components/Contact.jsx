@@ -39,7 +39,8 @@ function Contact() {
         };
 
         try {
-            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/contacto`, {
+            const apiUrl = import.meta.env.VITE_API_URL || '';
+            const response = await fetch(`${apiUrl}/api/contacto`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
