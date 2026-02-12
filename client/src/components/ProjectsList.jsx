@@ -33,7 +33,7 @@ function ProjectList() {
         <div>
             <div>
                 <h2 className={`d-block ${styles.h2About} text-center ${styles.text} text-white`}>PROYECTOS</h2>
-                <p className={`text-white ${styles.text} ${styles.pText} ${styles.pAbout}`}>"Acá encontrarás una selección de mis trabajos principales. Por razones de confidencialidad y seguridad de datos, algunos repositorios se mantienen privados. Sin embargo, puedes consultar fragmentos de código específicos (Gists) para conocer mi metodología de desarrollo."</p>
+                <p className={`text-white ${styles.text} ${styles.pText} ${styles.pAbout}`}>Acá encontrarás una selección de mis trabajos principales. Por razones de confidencialidad y seguridad de datos, algunos repositorios se mantienen privados. Sin embargo, puedes consultar fragmentos de código específicos (Gists) para conocer mi metodología de desarrollo.</p>
             </div>
             <div className={styles.filterContainer}>
                 {['Todos', "Sitio Web", "Aplicación web", "Aplicación web PWA", "Aplicación mobile", "Aplicación desktop"].map(cat => (

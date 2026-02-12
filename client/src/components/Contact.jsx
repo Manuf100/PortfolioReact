@@ -70,6 +70,11 @@ function Contact() {
             <div className={`${styles.mySizeAbout} ${styles.end} m-auto`}>
                 <div>
                     <h2 className={`d-block ${styles.h2About} text-center ${styles.text} text-white`}>CONTACTO</h2>
+                    <p className={`text-center text-white mb-5 ${styles.text}`} style={{ fontSize: "1.5rem" }}>
+                        ¿Tenés una idea en mente o queres colaborar en un proyecto? <br />
+                        ¡Escribime! Estoy siempre dispuesto a escuchar nuevas propuestas y desafíos. <br />
+                        También podés encontrarme en mis redes sociales aquí abajo.
+                    </p>
                 </div>
                 <div className={styles.formContainer}>
                     <form onSubmit={handleSubmit} className='needs-validation'>
@@ -117,11 +122,11 @@ function Contact() {
                         <i className="fa-brands fa-github"></i> <span>@Manuf100</span>
                     </a>
                 </div>
-                <div className={styles.socialDivContact}>
+                {/*<div className={styles.socialDivContact}>
                     <a href="https://www.instagram.com/_manufigue?igsh=MjVtazI5NTQ1dmQ4" target="_blank" rel="noopener noreferrer" className={styles.iconoContact}>
                         <i className="fa-brands fa-instagram"></i> <span>@_manufigue</span>
                     </a>
-                </div>
+                </div>*/}
                 <div className={styles.socialDivContact}>
                     <a href="mailto:manufigueroa169@gmail.com?subject=Conulta%20desde%20portfolio" className={styles.iconoContact}>
                         <i className="fa-solid fa-envelope"></i> <span>manufigueroa169@gmail.com</span>

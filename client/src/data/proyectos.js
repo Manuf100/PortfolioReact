@@ -17,6 +17,7 @@ export const proyectos=[
             "cancionero05.jpg",
             "cancionero06.jpg"
         ],
+        github:"https://gist.github.com/Manuf100/067094233c82109227f849bb786bd88c",
         web:"https://cancionero-schoenstatt.web.app/",
         playStore:"https://play.google.com/store/apps/details?id=com.MANUF.JMSALTA"
     },
@@ -35,5 +36,60 @@ export const proyectos=[
             "economia_03.png"
         ],
         github:"https://gist.github.com/Manuf100/152c3f69a7e16102298447f421a37cf5"
+    },
+    {
+        id:3,
+        titulo:"Portfolio",
+        categoria:["Sitio Web"],
+        fechaInicio:"Enero 2026",
+        fechaFin:"En producción",
+        tecnologias:["React", "CSS", "JavaScript", "Bootstrap 4", "Node.Js", "Supabase"],
+        descripcion:"Mi portfolio personal",
+        detalleLargo: "Este portfolio es una plataforma fullstack diseñada para centralizar y exponer mi trayectoria académica y profesional en Ingeniería Informática. El objetivo principal fue construir un ecosistema digital que demuestre mis capacidades en desarrollo frontend, arquitectura de servidores y gestión de persistencia de datos.\n\n" +"🚀 Arquitectura Técnica:\n" +"• Frontend Dinámico: Desarrollado con React para una navegación fluida y una gestión de estados eficiente, utilizando Bootstrap para garantizar una experiencia de usuario responsiva y adaptada a cualquier dispositivo.\n" +"• Backend y Lógica de Servidor: Implementé un servidor con Node.js y Express para procesar solicitudes críticas, como la gestión del formulario de contacto.\n" +"• Persistencia de Datos con Supabase: Integración con Supabase (PostgreSQL) para el almacenamiento de mensajes y la gestión escalable de la información del sitio.\n\n" +"🛠️ Desafíos Resueltos:\n" +"• Seguridad: Configuración de variables de entorno (.env) para la protección de credenciales y seguridad de la base de datos.\n" +"• Organización de Código: Estructura de proyecto modular separando claramente el 'client' del 'server', siguiendo las mejores prácticas de la industria.\n" +"• Animaciones e Interacción: Implementación de Intersection Observer API para una experiencia visual dinámica y moderna.",
+        imagenes:[
+            "portfolio_02.png",
+            "portfolio_03.png",
+            "portfolio_01.png"
+        ],
+        github:"https://github.com/Manuf100/PortfolioReact.git",
+        web:"",
+        playStore:""
+    },
+    {
+        id:4,
+        titulo:"Ecommerce Vivero",
+        categoria:["Sitio web"],
+        fechaInicio:"Marzo 2023",
+        fechaFin:"Noviembre 2023",
+        tecnologias:["HTML", "CSS", "JavaScript", "XAMPP", "PHP", "MySQL"],
+        descripcion:"Ecommerce para la materia Lenguajes 3 y Lenguajes 4",
+        detalleLargo: "Este proyecto representó uno de mis primeros grandes desafíos en el desarrollo de software, donde partiendo de conocimientos iniciales, logré construir un ecommerce de un vivero para la materia Lenguajes 3 y Lenguajes 4. Fue la base donde consolidé conceptos fundamentales de programación.\n\n" +"🚀 Aprendizajes y Logros Técnicos:\n" +"• Implementación de CRUD Completo: Desarrollé la capacidad de Crear, Leer, Actualizar y Eliminar registros, gestionando de manera efectiva el inventario de plantas y clientes.\n" +"• Diseño de Dashboard Administrativo: Creé una interfaz centralizada para la visualización de datos clave, permitiendo una toma de decisiones informada sobre el stock y las finanzas del negocio.\n" +"🛠️ Evolución del Proyecto:\n" +"• Interfaz de Usuario: Pasé de diseños simples a una navegación fluida y organizada, priorizando la facilidad de uso para el administrador.\n" +"• Lógica de Negocio: Programé validaciones y cálculos automáticos para procesos de venta y alertas de bajo stock.\n",
+        imagenes:[
+            "vivero_04.png",
+            "vivero_05.png",
+            "vivero_03.png",
+            "vivero_02.png",
+            "vivero_01.png"
+        ],
+        github:"https://gist.github.com/Manuf100/6c018b10deefd83240763955a8776c3a",
+        web:"",
+        playStore:""
+    },
+    {
+       id:5,
+       titulo:"Trabajo Principio de Informática",
+       categoria:["Aplicación desktop"],
+       fechaInicio:"Octubre 2022",
+       fechaFin:"Noviembre 2022",
+       tecnologias:["Python", "Tkinter", "XlsxWriter"],
+       descripcion:"Trabajo para la materia Principio de Informática",
+       detalleLargo: "Este fue uno de mis primeros proyectos en la carrera de Ingeniería, enfocado en resolver una problemática real de análisis de datos deportivos utilizando Python.\n\n" + "🚀 Habilidades Técnicas Demostradas:\n" + "• Automatización de Reportes: Utilicé la librería XlsxWriter para generar archivos Excel desde cero, aplicando formatos condicionales para resaltar a los jugadores que superaban el promedio.\n" + "• Visualización de Datos: Implementé la creación de gráficos dinámicos (Barras vs. Líneas) dentro de las hojas de cálculo para facilitar la interpretación del rendimiento.\n" + "• Lógica de Algoritmos: En lugar de usar funciones predefinidas, implementé manualmente un algoritmo de ordenamiento para organizar a los deportistas por su velocidad.\n\n" + "🛠️ Interfaz y Experiencia:\n" + "• Desarrollé una interfaz gráfica (GUI) con Tkinter para que la carga de datos sea sencilla para cualquier usuario, alejándome de la consola y acercándome a una aplicación de escritorio real.\n" + "• Este proyecto sentó las bases de mi pensamiento lógico y mi interés por herramientas que optimizan tareas repetitivas mediante el código.",
+       imagenes:[
+        "jugadores_02.png",
+        "jugadores_01.png"
+       ],
+       github:"https://github.com/Manuf100/trabajo-final-principio-informatica.git",
+       web:"",
+       playStore:""
     }
 ]
