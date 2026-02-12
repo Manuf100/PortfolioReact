@@ -38,6 +38,13 @@ app.post('/api/contacto', async (req, res) => {
 });
 
 const PORT = process.env.PORT || 3001;
-app.listen(PORT, () => {
-    console.log(`Servidor de Manuel Figueroa corriendo en http://localhost:${PORT}`);
-});
+
+// Export the Express app for Vercel (serverless function)
+export default app;
+
+// Only listen if not running in production (for local dev)
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`Servidor de Manuel Figueroa corriendo en http://localhost:${PORT}`);
+    });
+}
