@@ -129,7 +129,7 @@ function Contact() {
                     </a>
                 </div>*/}
                 <div className={styles.socialDivContact}>
-                    <a href="https://www.linkedin.com/in/manuel-figueroa-6326763b0" target="_blank" rel="noopener noreferrer" className={styles.iconoContact}>
+                    <a href="https://www.linkedin.com/in/manuel-figueroa2004" target="_blank" rel="noopener noreferrer" className={styles.iconoContact}>
                         <i className="fa-brands fa-linkedin"></i> <span>Manuel Figueroa</span>
                     </a>
                 </div>

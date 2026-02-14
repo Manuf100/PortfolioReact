@@ -8,7 +8,7 @@ function SocialHome() {
         <div id={styles.social}>
             <SocialLink link="https://github.com/Manuf100" icono={github} />
             {/*<SocialLink link="https://www.instagram.com/_manufigue?igsh=MjVtazI5NTQ1dmQ4" icono={instagram} full />*/}
-            <SocialLink link="https://www.linkedin.com/in/manuel-figueroa-6326763b0" className="fa-brands fa-linkedin" style={{ color: "black" }} />
+            <SocialLink link="https://www.linkedin.com/in/manuel-figueroa2004" className="fa-brands fa-linkedin" style={{ color: "black" }} />
             <SocialLink link="mailto:manufigueroa169@gmail.com?subject=Conulta%20desde%20portfolio" icono={mail} full />
         </div>
     );
