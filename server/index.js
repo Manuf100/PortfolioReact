@@ -8,6 +8,19 @@ const app = express();
 // Middleware
 app.use(cors()); // Permite que tu React (puerto 5173) se comunique con Node
 app.use(express.json()); // Permite leer el cuerpo (body) de las peticiones JSON
+const requireAuth = async (req, res, next) => {
+    const authHeader=req.headers.authorization;
+    const token=authHeader && authHeader.split(' ')[1];
+    if(!token){
+        return res.status(401).json({error: 'Acceso denegado. Se requiere token.'});
+    }
+
+    const {data: {user }, error }= await supabase.auth.getUser(token);
+    if(error || !user){
+        return res.status(403).json({error: 'Token invalido o expirado.'});
+    }
+    next();
+};
 
 // Conexión con Supabase usando variables de entorno
 const supabase = createClient(
@@ -36,6 +49,37 @@ app.post('/api/contacto', async (req, res) => {
         res.status(500).json({ error: "Error interno del servidor" });
     }
 });
+
+app.post('/api/login', async (req,res)=>{
+    const {email, password}=req.body;
+    const {data,error}=await supabase.auth.signInWithPassword({
+        email,
+        password
+    });
+    if (error){
+        return res.status(401).json({error: 'Credenciales invalidas'});
+    }
+    res.json({
+        message: 'Login exitoso',
+        token: data.session.access_token
+    });
+});
+
+app.get('/api/comments', requireAuth, async (req, res)=>{
+    const {data, error}= await supabase.from('mensajes_contacto'). select('*'). order('created_at', {ascending:false});
+    
+    if(error){
+        return res.status (400).json(error);
+    }
+    res.json(data);
+});
+app.delete('/api/comments/:id', requireAuth, async (req, res)=>{
+    const {id}=req.params;
+    const {error}= await supabase.from('mensajes_contacto').delete().eq('id', id);
+
+    if(error) return res.status(400).json(error);
+    res.json({message: 'Comentario eliminado correctamente'});
+})
 
 const PORT = process.env.PORT || 3001;
 
