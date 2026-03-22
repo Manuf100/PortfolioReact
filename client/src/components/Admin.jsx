@@ -1,6 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import styles from '../styles/admin.module.css';
 import Comentarios from './comentarios';
+import ProjectAdmin from './PrrojectAdmin';
+import ProyectAdmin from './PrrojectAdmin';
 
 function Admin() {
     const navigate = useNavigate();
@@ -13,6 +15,7 @@ function Admin() {
     return (
         <section>
             <Comentarios />
+            <ProjectAdmin />
             <button
                 onClick={handleLogout}
                 style={{

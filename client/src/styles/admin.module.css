@@ -77,10 +77,9 @@
 
 .admin {
     position: relative;
-    min-height: 80rem;
-    max-height: 120rem;
     background-color: var(--main-bg);
-    padding: 12rem 0 12rem 0;
+    padding: 12rem 0 3rem 0;
+    /* Padding inferior reducido a 5rem */
 }
 
 .end {
@@ -133,14 +132,17 @@
 .table {
     width: 100%;
     border-collapse: collapse;
-    color: white; /* Fundamental para que se vea en fondo oscuro */
+    color: white;
+    /* Fundamental para que se vea en fondo oscuro */
     font-family: var(--font-family);
-    font-size: 1.2rem; /* Tamaño de letra aumentado */
+    font-size: 1.2rem;
+    /* Tamaño de letra aumentado */
     margin-top: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.table th, .table td {
+.table th,
+.table td {
     padding: 15px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     text-align: left;
@@ -159,11 +161,13 @@
 }
 
 .table tbody tr:nth-child(even) {
-    background-color: rgba(255, 255, 255, 0.08); /* Filas pares un poco mas claras */
+    background-color: rgba(255, 255, 255, 0.08);
+    /* Filas pares un poco mas claras */
 }
 
 .table tbody tr:hover {
-    background-color: rgba(255, 255, 255, 0.15); /* Efecto hover */
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Efecto hover */
 }
 
 .deleteBtn {
