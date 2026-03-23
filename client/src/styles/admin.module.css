@@ -1,0 +1,187 @@
+:root {
+    --social-bg-color: #8a8a8a;
+    --social-bg-color-hover: #d8d8d865;
+    --gradient-left: #00094d;
+    --gradient-right: #011082;
+    --header-hover: #ffb163;
+    --header-text: rgba(232, 232, 232, 0.85);
+    --font-family: 'Source Sans Pro', sans-serif;
+    --main-bg: #31373c;
+    --p-about: #c8c6c6ea;
+    --skills: #252525;
+}
+
+@keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        transform: scale3d(.75, 1.25, 1);
+    }
+
+    40% {
+        transform: scale3d(1.25, .75, 1);
+    }
+
+    50% {
+        transform: scale3d(.85, 1.15, 1);
+    }
+
+    65% {
+        transform: scale3d(1.05, .95, 1);
+    }
+
+    75% {
+        transform: scale3d(.95, 1.05, 1);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes slide-right {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-top {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-48px);
+    }
+}
+
+@keyframes scaleLine {
+    0% {
+        transform: translateX(-50%) scaleX(0);
+    }
+
+    100% {
+        transform: translateX(-50%) scaleX(1);
+    }
+}
+
+.admin {
+    position: relative;
+    background-color: var(--main-bg);
+    padding: 12rem 0 3rem 0;
+    /* Padding inferior reducido a 5rem */
+}
+
+.end {
+    padding-bottom: 40px;
+}
+
+.h2Admin {
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+    font-size: 40px;
+    position: relative;
+    font-weight: bold;
+}
+
+.h2Admin::after {
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 10%;
+    background: var(--gradient-left);
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    border-radius: 5px;
+}
+
+.h2Admin.active::after {
+    animation: scaleLine 1s ease-out forwards;
+}
+
+.mysizeAdmin {
+    max-width: 130rem;
+    width: 90%;
+}
+
+.text {
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* ESTILOS DE LA TABLA */
+.tableContainer {
+    width: 90%;
+    margin: 0 auto;
+    overflow-x: auto;
+    padding-bottom: 50px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    /* Fundamental para que se vea en fondo oscuro */
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+    /* Tamaño de letra aumentado */
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.table th,
+.table td {
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+.table th {
+    background-color: var(--gradient-left);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table tbody tr {
+    background-color: rgba(255, 255, 255, 0.03);
+    transition: background-color 0.3s ease;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.08);
+    /* Filas pares un poco mas claras */
+}
+
+.table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    /* Efecto hover */
+}
+
+.deleteBtn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
