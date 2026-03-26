@@ -10,6 +10,7 @@ import Login from './components/Login'
 import ProtectedRoute from './components/ProtectedRoute'
 import Admin from './components/Admin'
 import ProjectEditAdmin from './components/ProjectEditAdmin'
+import NotFound from './components/NotFound'
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
               <ProjectEditAdmin />
             </ProtectedRoute>
           }></Route>
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

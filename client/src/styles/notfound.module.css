@@ -1,0 +1,119 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-family: var(--font-family);
+}
+
+.errorCode {
+    font-size: 8rem;
+    font-weight: 900;
+    color: #17a2b8;
+    text-shadow: 0 0 20px rgba(23, 162, 184, 0.4), 0 0 40px rgba(1, 16, 130, 0.4);
+    letter-spacing: 5px;
+    animation: float 4s ease-in-out infinite;
+    display: inline-block;
+    /* Fuerza a que no haya bordes ni subrayados heredados */
+    border: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.errorCode::after,
+.errorCode::before {
+    display: none !important;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* Fuerza a que no haya bordes ni subrayados heredados */
+    border: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.title::after,
+.title::before {
+    display: none !important;
+}
+
+.description {
+    font-size: 1.5rem;
+    color: var(--p-about);
+    margin-bottom: 3rem;
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+.homeButton {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: transparent;
+    color: #17a2b8;
+    border: 2px solid #17a2b8;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(23, 162, 184, 0.2);
+}
+
+.homeButton:hover {
+    background: #17a2b8;
+    color: white;
+    box-shadow: 0 0 25px rgba(23, 162, 184, 0.6);
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Animación de Flotación para el 404 */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Animaciones de aparición en cascada */
+.slideUp {
+    opacity: 0;
+    animation: slideUpAnim 0.8s forwards cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.delay1 {
+    animation-delay: 0.2s;
+}
+
+.delay2 {
+    animation-delay: 0.4s;
+}
+
+@keyframes slideUpAnim {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
