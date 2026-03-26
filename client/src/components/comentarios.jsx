@@ -7,7 +7,8 @@ function Comentarios() {
 
     useEffect(() => {
         const token = localStorage.getItem('adminToken');
-        fetch('http://localhost:3001/api/comments', {
+        const apiUrl = import.meta.env.VITE_API_URL || '';
+        fetch(`${apiUrl}/api/comments`, {
             headers: { 'Authorization': `Bearer ${token}` }
         })
             .then(res => res.json())
@@ -44,7 +45,8 @@ function Comentarios() {
     const handleDelete = async (id) => {
         if (window.confirm("¿Estás seguro de eliminar este comentario?")) {
             const token = localStorage.getItem('adminToken');
-            const res = await fetch(`http://localhost:3001/api/comments/${id}`, {
+            const apiUrl = import.meta.env.VITE_API_URL || '';
+            const res = await fetch(`${apiUrl}/api/comments/${id}`, {
                 method: 'DELETE',
                 headers: { 'Authorization': `Bearer ${token}` }
             });

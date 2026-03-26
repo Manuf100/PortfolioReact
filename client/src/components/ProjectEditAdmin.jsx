@@ -27,9 +27,10 @@ function ProjectEditAdmin() {
         // usando el token tal cual como lo hicimos en Comentarios:
         /*
         const token = localStorage.getItem('adminToken');
-        await fetch(`http://localhost:3001/api/proyectos/${id}`, {
+        const apiUrl = import.meta.env.VITE_API_URL || '';
+        await fetch(`${apiUrl}/api/proyectos/${id}`, {
             method: 'PUT',
-            headers: { 'Authorization': `Bearer ${token}` },
+            headers: { 'Authorization': `Bearer ${token}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ titulo, descripcion })
         });
         */
