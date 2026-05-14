@@ -1,5 +1,6 @@
 export const habilidades = [
     { id: 18, name: "React", color: "#61dafb" },
+    { id: 19, name: "Node.js", color: "#68a063" },
     { id: 3, name: "JavaScript", color: "#f7df1e" },
     { id: 1, name: "HTML", color: "#e34c26" },
     { id: 2, name: "CSS", color: "#264de4" },
@@ -16,7 +17,8 @@ export const habilidades = [
     { id: 13, name: "Tiendanube", color: "#2d3e50" },
     { id: 8, name: "Hostinger", color: "#673ab7" },
     { id: 14, name: "JSON", color: "#000000" },
-    { id: 17, name: "XAMPP", color: "#fb7a24" }
+    { id: 17, name: "XAMPP", color: "#fb7a24" },
+    { id: 20, name: "Machine Learning", color: "#47a248" }
 ];
 
 export const caracteristicas = [
