@@ -18,7 +18,8 @@ export const habilidades = [
     { id: 8, name: "Hostinger", color: "#673ab7" },
     { id: 14, name: "JSON", color: "#000000" },
     { id: 17, name: "XAMPP", color: "#fb7a24" },
-    { id: 20, name: "Machine Learning", color: "#47a248" }
+    { id: 20, name: "Machine Learning", color: "#47a248" },
+    { id: 21, name: "GENEXUS", color: "#1f77b4" }
 ];
 
 export const caracteristicas = [
