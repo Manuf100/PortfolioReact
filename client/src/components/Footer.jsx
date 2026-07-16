@@ -14,7 +14,7 @@ function Footer() {
                     <Col md={4} className="text-center text-md-start">
                         <h4 className={styles.footerTitle}>MANUEL FIGUEROA</h4>
                         <p className={styles.footerText}>
-                            Estudiante de Ingeniería en Informática apasionado por el desarrollo web y la tecnología.
+                            Estudiante de Ingeniería en Informática apasionado por el desarrollo de software y la tecnología.
                         </p>
                     </Col>
 

@@ -39,7 +39,7 @@ function SobreMi() {
                                 Tengo {edad} años. Soy estudiante de Ingeniería Informática en la Universidad Católica de Salta. Me apasiona la tecnología y busco constantemente nuevas formas de aplicar mis conocimientos en soluciones reales.
                             </p>
                             <p className={`${styles.text} ${styles.p14}`}>
-                                Mi enfoque principal es el desarrollo Front-End, donde disfruto creando interfaces intuitivas. Paralelamente, estoy expandiendo mis habilidades hacia el Back-End con Node.js, con el objetivo de tener una visión integral del desarrollo web.
+                                Mi enfoque principal es el desarrollo Front-End, donde disfruto creando interfaces intuitivas. Paralelamente, estoy expandiendo mis habilidades hacia el Back-End con Node.js, con el objetivo de tener una visión integral del desarrollo de software.
                             </p>
                             <p className={`${styles.text} ${styles.p14}`}>
                                 Me defino como una persona perseverante y detallista. Valoro el aprendizaje continuo y el trabajo en equipo, siempre buscando aportar valor y crecer junto a mis compañeros.
